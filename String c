@@ -1,0 +1,25 @@
+// to another.
+using System;
+ 
+class GFG
+{
+     
+// Function to copy one string to other
+// assuming that other string has enough
+// space.
+static void myCopy(char []s1, char []s2)
+{
+    int i = 0;
+    for (i = 0; i < s1.Length; i++)
+        s2[i] = s1[i];
+}
+ 
+// Driver code
+public static void Main(String[] args)
+{
+    char []s1 = "GEEKSFORGEEKS".ToCharArray();
+    char []s2 = new char[s1.Length];
+    myCopy(s1, s2);
+    Console.WriteLine(String.Join("", s2));
+}
+}
